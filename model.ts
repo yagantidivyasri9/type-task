@@ -14,7 +14,7 @@ interface Task {
 let nextId = 1;
 // Add a new task - always starts as "todo".
 function addTask(tasks: Task[], title: string): Task[] {
-    const newTask: Task = { id: nextUD++, title, status: "todo" };
+    const newTask: Task = { id: nextId++, title, status: "todo" };
     return [...tasks, newTask];
 }
 
